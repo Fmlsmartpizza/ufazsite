@@ -1,0 +1,110 @@
+body {
+    font-family: "Space Grotesk", sans-serif;
+    background: linear-gradient(30deg, #fef2e4, #fcebd8);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #004445;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.navbar a {
+    color: #ffffff;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+.navbar a:hover {
+    background-color: #2C7873;
+    border-radius: 4px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #1995AD;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #127A89;
+}
+
+h1 {
+    color: #004445;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-top: 50px;
+}
+
+a {
+    color: #1995AD;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Стили для галереи */
+.photo-gallery {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.photo-gallery h2 {
+    color: #004445;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 100px,1fr; /* Одна колонка */
+    gap: 15px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - FLOW</title>
+    <link rel="icon" href="{{ url_for('static', filename='icons/logo.png') }}" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+</head>
+<body>
+    <div class="navbar">
+        <a href="{{ url_for('home') }}" class="nav-link">Home</a>
+        <a href="{{ url_for('home') }}" class="nav-link">Profile</a>
+        <a href="{{ url_for('register') }}" class="btn">Start</a>
+    </div>
+
+    <div class="content">
+        <h1>Welcome to FLOW</h1>
+        <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos, recusandae sequi blanditiis quae aut ipsa. Et, blanditiis natus omnis non labore quia reprehenderit?</h2>
+    </div>
+    <div class="photo-gallery"></div>
+        <h2>Our Gallery</h2>
+        <div class="gallery-grid">
+            <img src="{{ url_for('static', filename='icons/3.png') }}" alt="Photo 1">
+            <img src="{{ url_for('static', filename='icons/2.png') }}" alt="Photo 2">
+            <img src="{{ url_for('static', filename='icons/1.png') }}" alt="Photo 3">
+            <img src="{{ url_for('static', filename='icons/icon.png') }}" alt="Photo 4">
+        </div>
+    </div>
+</body>
+</html>
